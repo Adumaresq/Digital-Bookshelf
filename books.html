@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Digital Bookshelf - Livros</title>
+
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Não há container de posição para para o header, nem tag semântica para o nav acompanhar o scroll -->
+
+  <!-- Cabeçalho -->
+  <div class="nome text-center"> <!--centraliza o texto-->
+    <h1>Digital Bookshelf</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light cor1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Digital Bookshelf</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="formulario.html">Cadastrar-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="login.html">Login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              Categorias
+            </a>
+            <ul class="dropdown-menu not">
+              <li><a class="dropdown-item" href="#cliche">Clichês</a></li>
+              <li><a class="dropdown-item" href="#auto_ajuda">Auto ajuda</a></li>
+              <li><a class="dropdown-item" href="#bio">Biografias</a></li>
+              <li><a class="dropdown-item" href="#infantis">Infantis</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link" onclick="sair()">Sair</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <!-- Fim do cabeçalho -->
+
+
+  <!-- Container de disposição do grid:conteudo -->
+  <!-- Posiciona o elemento e seus filhos no meio dp layout-->
+
+  <main class="conteudo">
+
+    <!-- Carrossel de imagens-->
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/livros/carrossel 5 passos.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/livros/carrossel einstein.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/livros/carrossel vbsa.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+    <!-- Fim do carrouseu -->
+
+    <br><br>
+
+    <!-- Conteúdo principal -->
+    <section class="center">
+
+      <div class="container text-light" id="cliche">
+        <!--ocupa a extensão da página, cria um espaçamento lateral, totalmente expansivo, se adpta ao tamanho da tela-->
+        <h2 class="h2-center">Clichês</h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"> <!--colunas do bootstrap-->
+            <a
+              href="https://www.amazon.com.br/cinco-passos-você-Rachael-Lippincott/dp/8525067423/ref=sr_1_1?crid=QYDO1CFQNIGW&keywords=a+cinco+passos+de+voce+capa+azul&qid=1703528953&sprefix=a+cinco+passos+de+voce+ca%2Caps%2C191&sr=8-1">
+              <img src="imgs/livros/acincopassosdevoce.jpg" class="img-fluid img-exal" alt="..."> <!--IMAGEM -->
+            </a>
+          </div>
+          <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+            <a
+              href="https://www.amazon.com.br/Vermelho-branco-sangue-Casey-McQuiston/dp/8555340942/ref=sr_1_3?crid=3V820TGN3Q377&keywords=livro+vermelho+branco+e+sangue+azul&qid=1703529526&sprefix=sangue+ver%2Caps%2C268&sr=8-3">
+              <img src="imgs/livros/vermelho branco e sangue azul.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+            </a>
+          </div>
+          <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+            <a
+              href="https://www.amazon.com.br/Assim-que-Acaba-Colleen-Hoover/dp/8501112518/ref=sr_1_1?crid=25N9SAGD9MX7R&keywords=é+assim+que+acaba&qid=1703529193&sprefix=é+ass%2Caps%2C274&sr=8-1">
+              <img src="imgs/livros/e assim que acaba.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+            </a>
+          </div>
+          <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+            <a
+              href="https://www.amazon.com.br/assim-que-começa-Vol-acaba/dp/6559811395/ref=sr_1_1?crid=1UV5KIXUY5FGO&keywords=é+assim+que+começa&qid=1703529217&sprefix=é+assim+que+c%2Caps%2C333&sr=8-1">
+              <img src="imgs/livros/e assim que comeca.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+            </a>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="container text-light" id="auto_ajuda">
+          <h2 class="h2-center">Auto ajuda</h2>
+        </div>
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+              <a
+                href="https://www.amazon.com.br/Sutil-Arte-Ligar-Se/dp/855100249X/ref=sr_1_1?crid=21FW15L4WTI77&keywords=a+sutil+arte+de+ligar+o+foda+se&qid=1703529346&sprefix=a+sutil%2Caps%2C412&sr=8-1">
+                <img src="imgs/livros/a sutil arte de ligar  o foda-se.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+              </a>
+            </div>
+            <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+              <a
+                href="https://www.amazon.com.br/Atitude-positiva-diária-segredos-sucesso/dp/655544049X/ref=sr_1_1?crid=1UWBWCG5L1B56&keywords=atitude+positiva+diária&qid=1703529386&sprefix=atitude+positiva+diar%2Caps%2C270&sr=8-1">
+                <img src="imgs/livros/atitude positiva diaria.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+              </a>
+            </div>
+            <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+              <a
+                href="https://www.amazon.com.br/Gerencie-suas-emoções-Técnicas-cultivar/dp/6555642254/ref=sr_1_1?crid=3L06LSOQ0FKNM&keywords=gerencie+suas+emoções&qid=1703529414&sprefix=gerencie+%2Caps%2C365&sr=8-1">
+                <img src="imgs/livros/emocoes.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+              </a>
+            </div>
+            <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+              <a
+                href="https://www.amazon.com.br/Escolha-grandeza-decisões-exigem-coragem-ebook/dp/B0BDC8LHXV/ref=sr_1_1?crid=1MQENP3C2J4J9&keywords=escolha+a+grandeza&qid=1703529473&sprefix=escolha+a%2Caps%2C331&sr=8-1">
+                <img src="imgs/livros/grandeza.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+              </a>
+            </div>
+          </div>
+
+          <br><br>
+          <div class="container text-light" id="bio">
+            <h2 class="h2-center">Biografias</h2>
+          </div>
+
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+                <a
+                  href="https://www.amazon.com.br/Einstein-Biografia-um-gênio-imperfeito/dp/8537816655/ref=sr_1_1?crid=2A4RC78BG3YUH&keywords=einstein+biografia+de+um+genio+imperfeito&qid=1703529703&sprefix=um+genio+im%2Caps%2C199&sr=8-1">
+                  <img src="imgs/livros/einstein (1).jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+                </a>
+              </div>
+              <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+                <a
+                  href="https://www.amazon.com.br/Diana-Sua-verdadeira-história/dp/8576847787/ref=sr_1_1?crid=6B54QYQI5GVZ&keywords=diana+sua+verdadeira+história&qid=1703529749&sprefix=diana+sua%2Caps%2C328&sr=8-1">
+                  <img src="imgs/livros/diana.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+                </a>
+              </div>
+              <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+                <a
+                  href="https://www.amazon.com.br/Elon-Musk-bilionário-SpaceX-moldando/dp/B0C34KSGBR/ref=sr_1_1?__mk_pt_BR=ÅMÅŽÕÑ&crid=27N2P4SU8TY8W&keywords=elon+musk+como+ceo&qid=1703529772&sprefix=elon+musk+como+ceo%2Caps%2C235&sr=8-1">
+                  <img src="imgs/livros/musk.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+                </a>
+              </div>
+              <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+                <a
+                  href="https://www.amazon.com.br/Biografia-De-Mahommah-Gardo-Baquaqua/dp/8584300716/ref=sr_1_2?crid=2K89WGOUMIRYP&keywords=baquaqua&qid=1703529802&s=audible&sprefix=baquaqua%2Caudible%2C229&sr=1-2-catcorr">
+                  <img src="imgs/livros/baquaqua.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+                </a>
+              </div>
+            </div>
+
+            <br><br>
+            <div class="container text-light">
+              <h2 class="h2-center" id="infantis">Infantis</h2>
+            </div>
+
+            <div class="container">
+
+              <div class="row">
+                <div class="col-md-3"> <!--colunas do bootstrap-->
+                  <a
+                    href="https://www.amazon.com.br/Pequeno-Príncipe-Preto-Rodrigo-França/dp/8520938388/ref=sr_1_1?crid=1OVYNW2E9SPR8&keywords=o+pequeno+principe+preto&qid=1703530029&sprefix=o+pequeno+principe+%2Caps%2C221&sr=8-1">
+                    <img src="imgs/livros/preto.jpg" class="img-fluid img-exal" alt="..."><!--IMAGEM -->
+                  </a>
+                </div>
+
+                <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+                  <a
+                    href="https://www.amazon.com.br/365-Histórias-bíblicas-uma-História/dp/8538092693/ref=sr_1_18?__mk_pt_BR=ÅMÅŽÕÑ&crid=1UFF05WGCE1SA&keywords=365+historias+biblicas+maria&qid=1703530125&sprefix=365+historias+biblicas+maria%2Caps%2C316&sr=8-18">
+                    <img src="imgs/livros/biblia.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+                  </a>
+                </div>
+
+                <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+                  <a
+                    href="https://www.amazon.com.br/Marcelo-Marmelo-Martelo-Ruth-Rocha/dp/8516071499/ref=sr_1_1?crid=125WRLA753WS5&keywords=marcelo+marmelo+martelo&qid=1703530191&sprefix=marcelo%2Caps%2C477&sr=8-1">
+                    <img src="imgs/livros/marcelo.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+                  </a>
+                </div>
+
+                <div class="col-md-3 img-exal"> <!--colunas do bootstrap-->
+                  <a
+                    href="https://www.amazon.com.br/Menino-Maluquinho-Ziraldo-Alves-Pinto/dp/8506055105/ref=sr_1_1?__mk_pt_BR=ÅMÅŽÕÑ&crid=1IR3JFKAZDG4U&keywords=menino+malukinho&qid=1703530207&sprefix=menino+malukinho%2Caps%2C463&sr=8-1">
+                    <img src="imgs/livros/o menino maluquinho.jpg" class="img-fluid" alt="..."> <!--IMAGEM -->
+                  </a>
+                </div>
+
+
+              </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white down" style="background-color: #0a4275;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <h3>Digital Bookshelf</h3>
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">A sua biblioteca na palma da sua mão.</span>
+          <div>
+            INFO-3/2021
+          </div>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer> <!-- Fim do Footer -->
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/logado.js"></script>
+
+</body>
+
+</html>

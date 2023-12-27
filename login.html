@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Digital BookShelf - Login</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="Selecao/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="css/login.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url(https://img.freepik.com/fotos-premium/prateleira-com-livros_257123-9780.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703203200&semt=ais);
+      background-size: contain;
+    } 
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <div class="nome text-center"> <!--centraliza o texto-->
+    <h1>Digital Bookshelf</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light cor1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Digital Bookshelf</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="formulario.html">Cadastrar-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="books.html">Livros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <!-- Fim do cabeçalho -->
+
+  <main id="main">
+
+    <section>
+      <div class='login'>
+        <div class='card'>
+          <h1> Entrar </h1>
+
+          <div id='msgError'></div>
+
+          <div class='label-float'>
+            <input type='text' id='usuario' paceholder='' required>
+            <label id='userLabel' for='usuario'>Usuario</label>
+          </div>
+
+          <div class='label-float'>
+            <input type='password' id='senha' paceholder='' required>
+            <label id='senhaLabel' for='senha'>Senha</label>
+            <i class="fa fa-eye" aria-hidden="true"></i>
+          </div>
+
+          <div class='justify-center'>
+            <button onclick='entrar()'>Entrar</button>
+          </div>
+
+          <div class='justify-center'>
+            <hr>
+          </div>
+
+          <p> Não tem uma conta?
+            <a href="formulario.html"> Cadastre-se </a>
+          </p>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Grid container -->
+    <!-- Footer -->
+    <footer class="text-center text-white down" style="background-color: #0a4275;">
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <h3>Digital Bookshelf</h3>
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">A sua biblioteca na palma da sua mão.</span>
+          <div>
+            INFO-3/2021
+          </div>
+          </p>
+          <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </main>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="Selecao/assets/vendor/aos/aos.js"></script>
+  <script src="Selecao/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="Selecao/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="Selecao/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="Selecao/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="Selecao/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/login.js"></script>
+
+</body>
+
+</html>

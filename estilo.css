@@ -1,0 +1,62 @@
+/*define o comportamento de rolagem suave ao navegar pela página*/
+body {
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-areas:
+        "hero"
+        "footer"
+    ;
+}
+/*estilo para elementos com classe nome*/
+.nome {
+    background-color: black;
+}
+/*elemento com classe center ocupando a área hero definida no grid*/
+.center {
+    grid-area: hero;
+}
+/*elemento com classe down ocupando a area footer*/
+.down {
+    grid-area: footer;
+}
+/*estilo para cabeçalhos*/
+h1 {
+    color: #42d1f5;
+}
+/* Estilo para links dentro de elementos com classe "cor1", exceto aqueles com a classe "not" */
+.cor1 {
+    background-color: #6995fa;
+}
+
+.cor1 a:not(.not a) {
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.cor1 a:hover {
+    color: rgba(196, 196, 196, 0.801);
+}
+/* Estilos para a classe que controla a barra de navegação expandida */
+.navbar-expand-lg {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.btn-outline-success {
+    background-color: white;
+}
+
+.h2-center {
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 2rem !important;
+}
+
+/* Efeito de escala ao passar o mouse sobre elementos com a classe "img-exal" */
+.img-exal:hover {
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}

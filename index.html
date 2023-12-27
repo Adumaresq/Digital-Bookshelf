@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Digital BookShelf - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="Selecao/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="Selecao/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <div class="nome text-center"> <!--centraliza o texto-->
+    <h1>Digital Bookshelf</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light cor1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Digital Bookshelf</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="formulario.html">Cadastrar-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="books.html">Livros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" onclick="sair()">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <!-- Fim do cabeçalho -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Seja bem-vindo <span>Digital BookShrlf</span></h2>
+          <p class="animate__animated fanimate__adeInUp">Somos uma biblioteca online e o nosso objetivo é fazer
+            com que você tenha uma experiência de onde quer que esteja, tendo acesso a livros incríveis e que cabem no
+            seu bolço e na palma da sua mão.
+          </p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">O que prometemos?</h2>
+          <p class="animate__animated animate__fadeInUp">Conforto e a possibilidade de ter os seus livros favoritos de onde estiver.<p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Objetivos</h2>
+          <p>Proporcionar o prazer da leitura de onde quer que esteja.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left">
+              <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Direito</a></h4>
+              <p class="description">Livros do meio jurídico.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="">Dicionários</a></h4>
+              <p class="description">Livros para quem busca desenvolver um novo idioma.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Economia</a></h4>
+              <p class="description">TLivros com a temática finaceira para ajudar no ramo administrativo.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
+              <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
+              <h4 class="title"><a href="">Tecnologia</a></h4>
+              <p class="description">Livros sobre as últimas atualizações do meio e do mundo digital.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
+              <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
+              <h4 class="title"><a href="">Notícias</a></h4>
+              <p class="description">Livros informativos sobre notícias do Brasil e do mundo.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Curiosidades</h2>
+          <p>Conheça alguns autores</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Casey McQuiston</h3>
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="testimonial-img" alt="">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Casey McQuiston (Baton Rouge, 21 de janeiro de 1991) é uma personalidade estadunidense que atua na
+                  área da escrita de romances do gênero ficção jovem-adulta. Ganhou reconhecimento por seu romance de
+                  estreia de 2019 e best-seller do New York Times, Vermelho, Branco e Sangue Azul, em que o filho da
+                  primeira presidente dos Estados Unidos se apaixona por um príncipe da Inglaterra, e por seu segundo
+                  livro, Última Parada. McQuiston estreou no gênero de ficção jovem-adulta com seu livro Eu Beijei
+                  Shara Wheeler, lançado em 3 de maio de 2022. A revista Time incluiu McQuiston na Time 100 de
+                  2022.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <br>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Mark Manson</h3>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mark-manson-headshot-2018-1.jpg/300px-Mark-manson-headshot-2018-1.jpg"
+                  class="testimonial-img" alt="">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Mark Manson (Austin, 9 de março de 1984) é um escritor e blogueiro americano de autoajuda. Seus
+                  livros, dois dos quais, The Subtle Art of Not Giving a Fuck, A Arte Subtil de Saber Dizer Que Se F*da
+                  (título em Portugal) ou A Sutil Arte de Ligar o F*da-se (título no Brasil) e Everything Is Fucked: A
+                  Book About Hope, foram bestsellers do The New York Times. Seus livros venderam mais de 13 milhões de
+                  cópias.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <br>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Rodrigo Ferreira</h3>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Rodrigo_Fran%C3%A7a.jpg/300px-Rodrigo_Fran%C3%A7a.jpg"
+                  class="testimonial-img" alt="">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Rodrigo Ferreira França (Rio de Janeiro, 28 de janeiro de 1978), mais conhecido como Rodrigo França, é
+                  um diretor de cinema e teatro, ator, dramaturgo, filósofo, professor, articulador cultural, produtor,
+                  escritor, artista plástico e empresário brasileiro.
+                  É ativista pelos direitos civis, sociais e políticos da população negra no Brasil. Tem como inspiração
+                  o ator, diretor e político Abdias do Nascimento e a atriz Chica Xavier.
+                  O carioca é responsável pela dramaturgia e direção do espetáculo infanto-juvenil O Pequeno Príncipe
+                  Preto, que discute os estereótipos associados à representação dos negros como heróis infantis, onde
+                  foi assistido por mais de 60 mil espectadores.
+                  Com o filme Barba, Cabelo & Bigode, Rodrigo França entra na história sendo o primeiro diretor negro da
+                  Netflix Brasil a produzir conteúdo original.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <br>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Collen Hoover</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Colleen_Hoover_Video_Call.png"
+                  class="testimonial-img" alt="">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Colleen Hoover (Sulphur Springs, 11 de dezembro de 1979) é uma escritora norte-americana que escreve
+                  principalmente romances nos gêneros romântico e ficção para jovens adultos. Ela é mais conhecida
+                  por seu romance de 2016, It Ends with Us. Muitos de seus trabalhos foram autopublicados antes de serem
+                  adquiridos por uma editora. Hoover vendeu cerca de 20 milhões de livros até outubro de 2022.
+                  Em 2022 vendeu cerca de 2 milhões de livros apenas no Brasil. Em 2022 ocupou seis colocações entre
+                  os 10 mais vendidos na lista de best-sellers do New York Times.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <br>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Augusto Cury</h3>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Augusto_Cury%2C_escritor_%2828339139296%29.jpg/300px-Augusto_Cury%2C_escritor_%2828339139296%29.jpg"
+                  class="testimonial-img" alt="">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Augusto Jorge Cury (Colina, 2 de outubro de 1958) é um psiquiatra, professor e escritor brasileiro.
+                  Augusto é autor da Teoria da Inteligência Multifocal e seus livros foram publicados em mais de 70
+                  países, com mais de 25 milhões de livros vendidos somente no Brasil.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <br>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- Grid container -->
+    <!-- Footer -->
+    <footer class="text-center text-white down" style="background-color: #0a4275;">
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <h3>Digital Bookshelf</h3>
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">A sua biblioteca na palma da sua mão.</span>
+          <div>
+            INFO-3/2021
+          </div>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </main>
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="Selecao/assets/vendor/aos/aos.js"></script>
+  <script src="Selecao/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="Selecao/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="Selecao/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="Selecao/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="Selecao/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/logado.js"></script>
+
+</body>
+
+</html>
